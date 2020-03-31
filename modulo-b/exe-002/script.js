@@ -1,1 +1,3 @@
-console.log("olá, mundo!")
+var nome = "Stefano"
+
+console.log(nome)
