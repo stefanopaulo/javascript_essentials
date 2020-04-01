@@ -1,0 +1,30 @@
+/* Estilos Gerais */
+
+body {
+    background: #ececec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+div#area {
+    font: normal 15pt Arial;
+    background: #2a8b2a;
+    color: #fff;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+    cursor: pointer;
+}
