@@ -1,3 +1,3 @@
-var nome = "Stefano"
+var nome = prompt("Qual é o seu nome?")
 
-console.log(nome)
+alert(`Seja Bem Vindo ${nome}!`)
