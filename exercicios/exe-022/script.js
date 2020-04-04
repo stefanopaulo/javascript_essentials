@@ -1,17 +1,27 @@
-var num = document.querySelector('#num')
-var res = document.querySelector('#res')
-var btn = document.querySelector('.btn')
-
-var opt
-
 function tabuada() {
-    var n = Number(num.value)
+    let num = document.querySelector('#txtn')
+    let tab = document.querySelector('#seltab')
 
-    for (var i = 1; i <= 10; i++) {
-        opt = document.createElement('option')
-        opt.textContent = `${n} x ${i} = ${n * i}`
-        res.appendChild(opt)
+    if (num.value.length == 0) {
+        alert('Por favor, digite um número!')
+    } else {
+        let n = Number(num.value)
+
+        let c = 1
+
+        tab.innerHTML = ''
+
+        while (c <= 10) {
+            let item = document.createElement('option')
+
+            item.text = `${n} x ${c} = ${n * c}`
+            item.value = `tab${c}`
+
+            tab.appendChild(item)
+
+            c++
+        }
     }
-}
 
-btn.addEventListener('click', tabuada)
+    num.value = ''
+}
